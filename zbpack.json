@@ -1,4 +1,5 @@
 {
     "build_command": "cd frontend && npm run build",
-    "start_command": "cd backend && npm start"
+    "start_command": "cd backend && npm start",
+    "output_dir": "frontend/dist"
 }
