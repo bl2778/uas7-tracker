@@ -1,32 +1,5 @@
-# Dependencies
 node_modules/
-*/node_modules/
-
-# Build outputs
-frontend/dist/
-build/
-
-# Environment files
+npm-debug.log
 .env
-.env.local
-.env.production
-
-# Database
-backend/database/*.db
-
-# Logs
-*.log
-npm-debug.log*
-
-# OS files
+*.db
 .DS_Store
-Thumbs.db
-
-# IDE files
-.vscode/
-.idea/
-
-# Temporary files
-*.tmp
-*.temp# Zeabur
-.zeabur

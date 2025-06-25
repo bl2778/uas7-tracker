@@ -2,8 +2,21 @@
   "name": "uas7-tracker",
   "version": "1.0.0",
   "description": "UAS7 慢性荨麻疹追踪工具",
-  "main": "backend/server.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node backend/server.js"
+    "build": "echo 'Build completed'",
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "cors": "^2.8.5",
+    "sqlite3": "^5.1.0",
+    "uuid": "^9.0.0",
+    "dayjs": "^1.11.0",
+    "multer": "^2.0.1"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }

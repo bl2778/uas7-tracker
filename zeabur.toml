@@ -1,2 +1,8 @@
 [build]
-dockerfile = "Dockerfile"
+framework = "nodejs"
+buildCommand = "npm run build"
+startCommand = "npm start"
+nodeVersion = "18"
+
+[deploy]
+containerPort = 3000

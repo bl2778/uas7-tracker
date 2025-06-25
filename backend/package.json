@@ -2,10 +2,10 @@
   "name": "uas7-backend",
   "version": "1.0.0",
   "main": "server.js",
-  "type": "commonjs",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "postinstall": "cd ../frontend && npm install && npm run build"
   },
   "dependencies": {
     "express": "^4.18.0",
