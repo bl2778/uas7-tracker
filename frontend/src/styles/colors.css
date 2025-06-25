@@ -1,0 +1,63 @@
+:root {
+  /* Stormy Blue 主色彩系统 */
+  --color-primary: #6A89A7;           /* 主蓝灰 */
+  --color-primary-light: #88BDF2;     /* 中蓝 */
+  --color-primary-lighter: #BDDDFC;   /* 浅蓝 */
+  --color-primary-dark: #384959;      /* 深蓝灰 */
+  
+  /* 扩展配色 */
+  --color-secondary: #7B8BA3;         /* 次要蓝灰 */
+  --color-accent: #A8C8E1;            /* 强调色 */
+  --color-muted: #B8C5D1;             /* 静音色 */
+  
+  /* 功能色彩（降低饱和度） */
+  --color-success: #6B9B7F;           /* 柔和绿 */
+  --color-warning: #B8956B;           /* 柔和橙 */
+  --color-danger: #B5827A;            /* 柔和红 */
+  --color-info: #7B9BC4;              /* 柔和蓝 */
+  
+  /* 中性色（冷色调） */
+  --color-label: #2C3E50;             /* 深蓝灰文字 */
+  --color-secondary-label: #546E7A;    /* 次要文字 */
+  --color-tertiary-label: #78909C;     /* 三级文字 */
+  --color-quaternary-label: #B0BEC5;   /* 四级文字 */
+  
+  /* 背景色（冷色调） */
+  --color-system-background: #FAFBFC;        /* 系统背景 */
+  --color-secondary-system-background: #F5F7FA; /* 次要背景 */
+  --color-tertiary-system-background: #EDF2F7;  /* 三级背景 */
+  --color-grouped-background: #F8FAFC;          /* 分组背景 */
+  --color-secondary-grouped-background: #FFFFFF; /* 卡片背景 */
+  
+  /* 分隔线和边框 */
+  --color-separator: #E2E8F0;         /* 分隔线 */
+  --color-border: #CBD5E0;            /* 边框 */
+  --color-border-light: #F1F5F9;      /* 浅边框 */
+  
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(106, 137, 167, 0.08);
+  --shadow-md: 0 4px 12px rgba(106, 137, 167, 0.12);
+  --shadow-lg: 0 8px 24px rgba(106, 137, 167, 0.16);
+  
+  /* 毛玻璃效果 */
+  --backdrop-blur: blur(20px);
+  --backdrop-saturate: saturate(120%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-label: #E2E8F0;
+    --color-secondary-label: #A0AEC0;
+    --color-tertiary-label: #718096;
+    --color-quaternary-label: #4A5568;
+    
+    --color-system-background: #1A202C;
+    --color-secondary-system-background: #2D3748;
+    --color-tertiary-system-background: #4A5568;
+    --color-grouped-background: #171923;
+    --color-secondary-grouped-background: #2D3748;
+    
+    --color-separator: #4A5568;
+    --color-border: #2D3748;
+  }
+}
