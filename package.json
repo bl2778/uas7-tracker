@@ -4,30 +4,6 @@
   "description": "UAS7 慢性荨麻疹追踪工具",
   "main": "backend/server.js",
   "scripts": {
-    "build": "npx vite build frontend",
-    "start": "node backend/server.js",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "dev:backend": "cd backend && nodemon server.js",
-    "dev:frontend": "cd frontend && npx vite"
-  },
-  "dependencies": {
-    "express": "^4.18.0",
-    "cors": "^2.8.5",
-    "sqlite3": "^5.1.0",
-    "uuid": "^9.0.0",
-    "dayjs": "^1.11.0",
-    "multer": "^2.0.1",
-    "vue": "^3.4.0",
-    "vue-router": "^4.2.0",
-    "pinia": "^2.1.0",
-    "@nutui/nutui": "^4.2.0",
-    "echarts": "^5.5.0",
-    "axios": "^1.6.0"
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.0",
-    "vite": "^5.0.0",
-    "@vitejs/plugin-vue": "^4.5.0",
-    "nodemon": "^3.0.0"
+    "start": "node backend/server.js"
   }
 }

@@ -1,20 +1,17 @@
-// backend/src/models/database.js
-import sqlite3 from 'sqlite3';
-import path from 'path';
-import dayjs from 'dayjs';
-import { v4 as uuidv4 } from 'uuid';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const sqlite3 = require('sqlite3').verbose();
+const path = require('path');
+const dayjs = require('dayjs');
+const { v4: uuidv4 } = require('uuid');
 
 const dbPath = path.join(__dirname, '../../database/uas7.db');
 const db = new sqlite3.Database(dbPath);
 
-// 其余代码保持不变...
-// (保持之前的所有函数实现)
+// 用户ID（单用户模式）
+let CURRENT_USER_ID = 'default-user';
 
-export {
+// ... 保持所有函数不变 ...
+
+module.exports = {
   initDatabase,
   getDiaryEntries,
   saveDiaryEntry,
